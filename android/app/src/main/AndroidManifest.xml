@@ -1,15 +1,10 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.yodo1.yodo1massdk_demo">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    package="com.gamesmaker.squidgame3D">
    <application
-        android:label="yodo1massdk_demo"
-        android:icon="@mipmap/ic_launcher"
-        android:networkSecurityConfig="@xml/network_security_config"
-        android:supportsRtl="true"
-        android:allowBackup="true"
-        android:hardwareAccelerated="true"
-        tools:replace="android:label"
-        tools:targetApi="n">
+       tools:replace="android:label"
+       tools:targetApi="n"
+       android:label="yodomasflutter"
+        android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
@@ -23,7 +18,8 @@
                  to determine the Window background behind the Flutter UI. -->
             <meta-data
               android:name="io.flutter.embedding.android.NormalTheme"
-              android:resource="@style/NormalTheme"/>
+              android:resource="@style/NormalTheme"
+              />
             <!-- Displays an Android View that continues showing the launch screen
                  Drawable until Flutter paints its first frame, then this splash
                  screen fades out. A splash screen is useful to avoid any visual
@@ -31,20 +27,21 @@
                  Flutter's first frame. -->
             <meta-data
               android:name="io.flutter.embedding.android.SplashScreenDrawable"
-              android:resource="@drawable/launch_background"/>
-
+              android:resource="@drawable/launch_background"
+              />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <!-- Don't delete the meta-data below.
-             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
+       <meta-data
+           android:name="com.google.android.gms.ads.APPLICATION_ID"
+           android:value="ca-app-pub-4973750815225055~7530927191" />
+
+       <!-- Don't delete the meta-data below.
+            This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
-       <meta-data
-           android:name="com.google.android.gms.ads.APPLICATION_ID"
-           android:value="ca-app-pub-7188592076082444~5424047815" />
     </application>
 </manifest>

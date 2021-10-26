@@ -8,6 +8,8 @@ class Yodo1Mas {
   static const _METHOD_NATIVE_SHOW_AD = "native_show_ad";
   static const _METHOD_FLUTTER_INIT_EVENT = "flutter_init_event";
   static const _METHOD_FLUTTER_AD_EVENT = "flutter_ad_event";
+  static const _METHOD_DISMISS_BANNER = "dismiss_banner";
+
 
   static const AD_TYPE_REWARD = 1;
   static const AD_TYPE_INTERSTITIAL = 2;
@@ -105,5 +107,9 @@ class Yodo1Mas {
 
   void showBannerAd() {
     _channel.invokeMethod(_METHOD_NATIVE_SHOW_AD, {"ad_type" : "Banner"});
+  }
+
+  void dismissBannerAd() {
+    _channel.invokeMethod(_METHOD_DISMISS_BANNER);
   }
 }
